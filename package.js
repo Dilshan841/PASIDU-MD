@@ -27,14 +27,3 @@
     "eslint": "^9.24.0"
   }
 }
-```
-
----
-
-⚙️ `scripts` usage:
-
-- `npm run start` – බොට් එක *PM2* හරහා Start කරන්න
-- `npm run stop` – PM2 process එක *අතරමඟින් නවතන්න*
-- `npm run restart` – PM2 bot එක *reset/reload* කරන්න
-
----
