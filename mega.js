@@ -1,4 +1,5 @@
 const mega = require("megajs");
+
 const auth = {
   email: "ashinsad459@gmail.com",
   password: "MniRvj3eN-RaNkK",
@@ -10,7 +11,7 @@ const upload = (data, name) => {
   return new Promise((resolve, reject) => {
     const storage = new mega.Storage(auth);
 
-    // Wait for storage to be ready
+    // MEGA storage එක ලින්ක් වෙද්දී
     storage.on("ready", () => {
       console.log("Storage is ready. Proceeding with upload.");
 
@@ -22,7 +23,7 @@ const upload = (data, name) => {
             reject(err);
           } else {
             storage.close();
-            resolve(url);
+            resolve(url); // Upload link එක ලබාදෙයි
           }
         });
       });
